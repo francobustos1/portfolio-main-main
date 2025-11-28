@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Franco Bustos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="logo">FB</div>
+      <div class="brand-text">Franco Bustos</div>
+    </div>
+
+    <nav id="menu" class="menu" aria-label="Menú principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="CV.html">CV</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <button id="burger" class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <section>
+    <h1 class="page-title">Contacto</h1>
+    <p class="meta">Si querés contactarme por un proyecto, trabajo o consulta, completá el formulario y te respondo.</p>
+
+    <form id="contact-form" novalidate>
+      <label for="name" class="meta">Nombre</label>
+      <input id="name" name="name" type="text" required class="form-input" placeholder="Tu nombre">
+
+      <label for="email" class="meta">Email</label>
+      <input id="email" name="email" type="email" required class="form-input" placeholder="tu@ejemplo.com">
+
+      <label for="message" class="meta">Mensaje</label>
+      <textarea id="message" name="message" rows="6" required class="form-textarea" placeholder="Escribe tu mensaje"></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-status" class="meta" aria-live="polite"></p>
+      </div>
+
+      <p class="meta help">Si tu cliente de correo no abre, podés enviar directamente a: <a href="mailto:francobustos819@gmail.com">francobustos819@gmail.com</a></p>
+    </form>
+  </section>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
